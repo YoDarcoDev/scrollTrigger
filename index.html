@@ -6,114 +6,105 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS MODAK - ABORETO - DM SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Modak&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
 
-    <div class="main-wrapper">
-        <section class="section-1">
-            <div class="box1">
-                <div class="name">kove</div>
-            </div>
-            <div class="box2">
-                <div class="images-gallery">
-                    <div class="col col-1">
-                        <img src="./images/img-1.jpg" alt="">
-                        <img src="./images/img-2.jpg" alt="">
-                        <img src="./images/img-3.jpg" alt="">
-                        <img src="./images/img-4.jpg" alt="">
-                        <img src="./images/img-9.jpg" alt="">
-                    </div>
-                    <div class="col col-2">
-                        <img src="./images/img-6.jpg" alt="">
-                        <img src="./images/img-7.jpg" alt="">
-                        <img src="./images/img-8.jpg" alt="">
-                        <img src="./images/img-9.jpg" alt="">
-                        <img src="./images/img-10.jpg" alt="">
-                    </div>
-                    <div class="col col-3">
-                        <img src="./images/img-11.jpg" alt="">
-                        <img src="./images/img-12.jpg" alt="">
-                        <img src="./images/img-1.jpg" alt="">
-                        <img src="./images/img-2.jpg" alt="">
-                        <img src="./images/img-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- FIRST BLOCK -->
+    <div class="intro bg-black-custom">
+        <div class="left">
+            <h2 class="title uppercase text-[36px] text-white">Un historien au Luxembourg</h2>
+            <h1 class="name uppercase text-[160px] leading-[93%] text-white">Gilbert Trausch</h1>
+        </div>
+        <div class="right">
+            <img src="./images/GT-intro.png" alt="">
+        </div>
 
-        <section class="section-2">
-            <div class="side-bar">
-                <i class="fa-solid fa-expand"></i>
-                <div class="brand-name">kove</div>
-                <div class="des">HIGH QUALITY FABRICS. <br>designed & made <br> in iceland.</br></div>
-            </div>
-            <div class="wrapper">
-                <div class="left">
-                    <div class="line-1">
-                        <p>VORLIF</p>
-                        <div class="copy-right">
-                            KOVE 2023#174 <br> DESIGNED TO ENDURE
-                        </div>
-                    </div>  
-                    
-                    <div class="image-wrapper">
-                        <img src="./images/img-12.jpg" alt="">
-                    </div>
-                    
-                    <div class="line-2">
-                        <p class="num">/23</p>
-                        <p>SPRING</p>
-                        <button class="loop">
-                            <span>COLLECTION /SHOP&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                        </button>
-                        <button class="loop loop2">
-                            <span>COLLECTION /SHOP&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                        </button>
-                    </div>
-
-                </div>
-                <div class="right">
-                    <div class="animate-text">
-                        <span>COLLECTION /19° W</span>
-                    </div>
-                    <div class="img-container">
-                        <img src="./images/img-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
 
+    <!-- HORIZONTAL SCROLL -->
+    <div class="wrapper">
+        
+        <section class="section-1 flex items-center justify-center text-3xl">
+            <div class="grid grid-cols-12 block">
+                <div class="col-span-6">
+                    <div class="grid grid-cols-6 documents">
+                        <div class="col-span-2 col-start-2 pt-[450px] flex flex-col items-center img-1">
+                            <div class="h-[165px] w-[120px]">
+                                <img src="./images/interview.jpeg">
+                            </div>
+                            <h3 class="angie text-[22px] uppercase text-center mt-[30px] leading-[24px] mb-[20px]">Interview <br> de Cathy Jaeger</h3>
+                            <span class="uppercase text-[11px] cursor-pointer">Voir</span>
+                        </div>
 
-    <section class="section-3">
-        <div class="rows">
-            <ul class="row row-1">
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-            </ul>
-            <ul class="row row-2">
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-            </ul>
-            <ul class="row row-3">
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-                <li>kove</li>
-            </ul>
-        </div>
-    </section>
+                        <div class="col-span-2 col-start-4 pt-[300px] flex flex-col items-center img-2">
+                            <div class="h-[165px] w-[120px]">
+                                <img src="./images/interview.jpeg">
+                            </div>
+                            <h3 class="angie text-[22px] uppercase text-center mt-[30px] leading-[24px] mb-[20px]">Curricullum vitae <br> de Gilbert Trausch</h3>
+                            <span class="uppercase text-[11px] cursor-pointer">Voir</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-4 col-start-7">
+                    <h2 class="mt-[90px] mb-[260px] text-[34px] font-bold">Qui était Gilbert Trausch, l'historien aux milles facettes</h2>
+                    <p class="leading-[135%] font-normal">L’historien Gilbert Trausch est encore largement connu du public luxembourgeois. Pendant des décennies, ses incontournables interventions dans les médias ont contribué à faire découvrir l’histoire du Luxembourg à toute une génération.
+                        Ce n’est pourtant là qu’une des nombreuses facettes d’un historien prolifique de la seconde moitié du XXe siècle qui, en plus d’avoir renouvelé le paysage historiographique luxembourgeois, bénéficiait aussi d’une renommée solide en dehors des frontières du petit grand-duché. Formateur de toute une génération d’historien, tour à tour directeur de la Bibliothèque nationale, du Centre Universitaire (ancêtre de l’Uni), et du Centre d’Études Robert Schuman, habitué des dîners où se côtoyaient ministres et ambassadeurs, Gilbert Trausch était une personnalité omniprésente de la société luxembourgeoise.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-2 flex items-center justify-center text-3xl">Section 2</section>
+
+
+        <section class="section-3 flex items-center justify-center text-3xl">Section 3</section>
+    </div>
+   
     
+    <!-- CHAPTERS -->  
+        <!-- Chapter 1  -->
+        <section class="chapter chapter-1">
+            <div class="banner bg-red text-white">
+                <span class="absolute bottom-[30px] left-[50%] -translate-x-[50%] text-[22px] leading-[27px] modak">01</span>
+                <span class="vertical-text modak text-[38px]">Le personnage public</span>
+            </div>
+        </section>
+
+        <!-- Chapter 2  -->
+        <section class="chapter chapter-2">
+            <div class="banner bg-gray text-white">
+                <span class="absolute bottom-[30px] left-[50%] -translate-x-[50%] text-[20px] aboreto">02</span>
+                <span class="vertical-text aboreto text-[40px]">L'historien au travail</span>
+            </div>
+        </section>
+
+
+        <!-- Chapter 3  -->
+        <section class="chapter chapter-3">
+            <div class="banner bg-white">
+                <span class="absolute bottom-[30px] left-[50%] -translate-x-[50%] text-[20px]">03</span>
+                <span class="vertical-text text-[40px]">Le visionnaire du passé</span>
+            </div>
+        </section>
+
+        <!-- BRAND  -->
+        <div class="brand">Gilbert Trausch</div>
+
+
+        <div class="w-[100vw] h-[100vh] bg-red-100">TEST</div>
 
 
 
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="./script.js"></script>
