@@ -5,13 +5,31 @@
 }
 
 @font-face {
-    font-family: margareth;
-    src: url(./font/MargarethRosinante-Regular.otf);
+    font-family: futura;
+    src: url(./font/FuturaStd-Condensed.otf);
+}
+
+@font-face {
+    font-family: futura-bold;
+    src: url(./font/FuturaStd-CondensedBold.otf);
+}
+
+@font-face {
+    font-family: futura-light;
+    src: url(./font/FuturaStd-CondensedLight.otf);
+}
+
+@font-face {
+    font-family: futura-extrabold;
+    src: url(./font/FuturaStd-CondensedExtraBd.otf);
 }
 
 body {
     overflow-x: hidden;
-    font-family: margareth;
+    font-family: 'DM sans';
+    font-size: 17px;
+    line-height: 135%;
+    font-weight: 400;
     background-image: url(./images/background-paper.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,6 +64,18 @@ body {
     font-family: 'Angie Sans Std'
 }
 
+.futura-extrabold {
+    font-family: 'futura-extrabold';
+}
+
+.futura-bold {
+    font-family: 'futura-bold';
+}
+
+.futura {
+    font-family: 'futura';
+}
+
 
 
 .intro {
@@ -78,7 +108,6 @@ section {
     width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -155,12 +184,9 @@ section {
 
 
 
-
-
-
-
 .brand {
     position: fixed;
+    z-index: 2;
     top: 20px;
     font-size: 34px;
     left: calc(100vw - 600px);

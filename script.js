@@ -34,7 +34,7 @@ gsap.from('.section-1 .block', {
         trigger: '.section-1',
         start: 'top 80%',
         end: 'bottom top',
-        toggleActions: 'play reverse resume reverse'
+        // toggleActions: 'play reverse resume reverse'
     }
 })
 
@@ -49,7 +49,7 @@ let scrollTween = gsap.to(sections, {
       pin: true,
       scrub: 0.1,
       start: 'top top',
-      end: '+=3000'
+      end: '+=7000'
     }
 })
 
@@ -65,15 +65,15 @@ const timelineSection1 = gsap.timeline({
     }
 })
 
-timelineSection1.to('.chapter-3 .banner', { width: '50px', markers: true, duration: 0.5})
+timelineSection1.to('.chapter-3 .banner', { width: '50px', duration: 0.5})
 timelineSection1.to('.chapter-3 .banner .vertical-text', { opacity: 0 }, '<0.2')
 timelineSection1.to('.chapter-3', { left: 'calc(100vw - 50px)' }, '<')
 
-timelineSection1.to('.chapter-2 .banner', { width: '50px', markers: true, duration: 0.5})
+timelineSection1.to('.chapter-2 .banner', { width: '50px', duration: 0.5})
 timelineSection1.to('.chapter-2 .banner .vertical-text', { opacity: 0 }, '<0.2')
 timelineSection1.to('.chapter-2', { left: 'calc(100vw - 100px)' }, '<')
 
-timelineSection1.to('.chapter-1 .banner', { width: '50px', markers: true, duration: 0.5})
+timelineSection1.to('.chapter-1 .banner', { width: '50px', duration: 0.5})
 timelineSection1.to('.chapter-1 .banner .vertical-text', { opacity: 0 }, '<0.2')
 timelineSection1.to('.chapter-1', { left: 'calc(100vw - 150px)' }, '<')
 
