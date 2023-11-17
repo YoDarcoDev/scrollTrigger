@@ -25,7 +25,7 @@ section.chapter-1 {
     font-weight: 300;
 }
 
-p.citation {
+.chapter-1 p.citation {
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
@@ -65,3 +65,10 @@ sup:hover {
     font-size: 34px;
     left: calc(100vw - 600px);
 }
+
+
+
+
+
+
+

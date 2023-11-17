@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/chapter-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- FONTS MODAK - ABORETO - DM SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Modak&display=swap" rel="stylesheet">
+    
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <!-- Chapter 2  -->   
+    <section class="chapter chapter-2 bg-paper">
+
+        <div class="">
+            <div class="grid grid-cols-12 gap-[40px] pt-[165px] pb-[120px] relative">
+                <div class="col-span-9 col-start-3">
+                    <img src="./src/images/chapter-2/intro-chapter-2.png" alt="Photo de la bibliothèque de Gilbert Trausch">
+                </div>
+
+                <div class="col-span-11 col-start-2 absolute top-[115px]">
+                    <h1 class="text-[128px] leading-[93%] modak text-white uppercase">Le personnage <br>public</h1>
+                </div>
+
+                <div class="col-span-7 col-start-2 flex flex-col items-center absolute bottom-[72px] cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="62" viewBox="0 0 8 62" fill="none">
+                        <path d="M4.5 1L4.5 0.5L3.5 0.5L3.5 1L4.5 1ZM3.64644 61.3536C3.84171 61.5488 4.15829 61.5488 4.35355 61.3536L7.53553 58.1716C7.73079 57.9763 7.73079 57.6597 7.53553 57.4645C7.34027 57.2692 7.02369 57.2692 6.82842 57.4645L4 60.2929L1.17157 57.4645C0.976308 57.2692 0.659726 57.2692 0.464464 57.4645C0.269201 57.6597 0.269201 57.9763 0.464464 58.1716L3.64644 61.3536ZM3.5 1L3.5 61L4.5 61L4.5 1L3.5 1Z" fill="white"/>
+                    </svg>
+                    <span class="text-white text-[13px] font-extrabold pt-2 text-center">Voir <br> le chapitre</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Vertical Banner -->  
+        <!-- <div class="banner bg-red text-white">
+            <span class="absolute bottom-[30px] left-[50%] -translate-x-[50%] text-[22px] leading-[27px] modak">01</span>
+            <span class="vertical-text modak text-[38px]">Le personnage public</span>
+        </div> -->
+
+        <!-- Intro -->  
+        <div class="grid grid-cols-12 pb-[160px] gap-[40px] pt-[110px]">
+            <div class="col-span-8 col-start-2 pb-[80px]">
+                <h1 class="aboreto text-[86px] leading-[86px]">Une bibliothèque <br> privée impressionnante</h1>
+            </div>
+
+            <div class="col-span-9 col-start-3">
+                <img src="./src/images/chapter-2/intro-chapter-2.png" alt="Photo de la bibliothèque de Gilbert Trausch">
+            </div>
+        </div>
+    
+
+        <!-- Citation -->
+        <div class="grid grid-cols-12 flex items-center pb-[170px] gap-[40px]">
+            <div class="col-span-10 col-start-2">
+                <hr class="border-none h-[1px] bg-black">
+                <p class="citation text-center uppercase aboreto">
+                    « Une bibliothèque n’est pas une somme de livres,<br> c’est un organisme vivant à la vie autonome »
+                </p>
+
+                <span class="uppercase text-[13px] font-semibold text-center pb-[140px] pt-[30px] block">Umberto Eco</span>
+                
+                <hr class="border-none h-[1px] bg-black">
+            </div>
+        </div>
+
+    
+        <!-- La bibliothèque de Gilbert Trausch -->
+        <div class="grid grid-cols-12 gap-[40px] pb-[120px]">
+            <div class="col-span-3 col-start-2">
+                <h2 class="text-[42px] leading-[48px] font-light">La bibliothèque <br> de Gilbert Trausch</h2>
+                <span class="block uppercase pt-[50px] text-[13px] font-semibold">Bibliothèque de Gilbert Trausch</span>
+                <span class="block pt-[10px] text-[13px] italic font-light">
+                    Plus que les chercheurs de toute autre discipline, les historiens sont obsédés par les livres. Ils représentent leur outil le plus important. 
+                </span>
+                <div class="flex justify-end pt-[110px]">
+                    <img src="./src/images/chapter-2/logo-vue-maison.png" alt="Logo vue maison de Gilbert Trausch">
+                </div>
+
+                <div class="flex justify-end pt-[240px]">
+                    <div class="text-center">
+                        <p class="aboreto text-[32px] leading-[35px]">"Don't touch <br> these books! <br> They live here"</p>
+                        <span class="uppercase text-[13px] font-semibold text-center pb-[140px] block">Veronique Trausch</span>
+                    </div>
+                </div>
+
+                <div class="pt-[700px]">
+                    <img src="./src/images/chapter-2/books-1.png" alt="">
+                </div>
+
+                <div class="pt-[80px] pb-[160px]">
+                    <img src="./src/images/chapter-2/books-2.png" alt="">
+                </div>
+
+
+            </div>
+            <div class="col-span-6 col-start-6 text-[20px]">
+                <p>
+                    Plus que les chercheurs de toute autre discipline, les historiens sont obsédés par les livres. Ils représentent leur outil le plus important. Comme ils veulent avoir à tout moment un accès direct à leurs livres, ils constituent leurs propres bibliothèques privées. Ces lieux de connaissance intellectuelle sont le miroir des historiens qui les possèdent et de leurs recherches. Chaque bibliothèque a son propre profil intellectuel et exprime les intérêts individuels de son collectionneur. 
+                </p>
+                <p>
+                    À cet égard, Gilbert Trausch n’était pas une exception et sa bibliothèque privée était immense. Le nombre de livres imprimés dans sa bibliothèque privée dépasse les 19000 volumes, ce qui représentent 254 mètres linéaires répartis sur 3 étages et 33 étagères      . À ce nombre, il faut ajouter les milliers de photocopies, de cahiers remplis de notes, de brochures en tout genre, et de classeurs contenant sa correspondance. Cette quantité énorme correspond, grosso modo, à l’acquisition d’un livre par jour de la vie professionnelle de Gilbert Trausch.
+                </p>
+                <p>
+                    Faute de pouvoir décrire la bibliothèque de G. Trausch à un stade antérieur, il convient de limiter l’analyse au moment où, au milieu de l’année 2020, la bibliothèque a été prise en charge par l’université du Luxembourg. Il ne peut donc s’agir que d’un relevé qui n’est qu’un instantané d’un moment donné : des livres ont pu être déplacés par la famille après le décès de G. Trausch. Les livres et les papiers qui traînaient sur le bureau et le sol des bureaux de G. Trausch ont également dû faire l’objet d’un rangement. Néanmoins, on peut supposer que la plupart de ses livres ont été placés par lui-même sur les étagères où ils ont été trouvés. De plus, il est impossible de savoir si G. Trausch n’a pas lui-même réarrangé des portions de sa bibliothèque pendant sa longue carrière.
+                </p>
+
+                <div class="pt-[100px] flex justify-between pr-[50px]">
+                    <img src="./src/images/chapter-2/hifi.png" alt="Chaîne hifi">
+                    <div>
+                        <div>lecteur audio</div>
+                        <span>Extrait interview de Véronique et François Trausch</span>
+                    </div>
+                </div>
+
+                <div class="pt-[175px]">
+                    <p>
+                        Une bibliothèque est un être vivant, comme l'illustre la phrase attribuée à Umberto Eco. Les bibliothèques sont constituées sur de longues périodes et sont soumises à des changements constants. Leurs contenus augmentent et diminuent parfois. Les livres changent d’emplacement dans la bibliothèque, sont réaffectés ou retirés si nécessaire.
+                    </p>
+                    <p>
+                        L’enregistrement des données bibliographiques, la langue de publication et la localisation de chaque livre dans la bibliothèque nous renseignent non seulement sur les critères de classification, mais aussi sur les intérêts de l’historien en termes de contenu. Les livres, les feuilles de notes qui s’y trouvent et les traces d’utilisation, les annotations et les marginalia nous montrent comment la documentation a été utilisée, notée, lue et critiquée par l’historien. Les informations sur la provenance des volumes nous renseignent sur les stratégies d’acquisition et les contacts sociaux.
+                    </p>
+                </div> 
+            </div>
+        </div>
+
+
+
+        <!-- Image Background -->
+        <div class="w-full h-full mb-[300px]" style="background: url('./src/images/chapter-2/biblio-2.png') no-repeat center / cover"></div>
+
+
+
+
+        <!-- Un petit tour de la maison -->
+        <div class="grid grid-cols-12 gap-[40px] pb-[380px]">
+            <div class="col-span-4 col-start-2">
+                <h2 class="text-[42px] leading-[48px] font-light">La bibliothèque <br> de Gilbert Trausch</h2>
+                <span class="block uppercase pt-[50px] text-[13px] font-semibold">Bibliothèque de Gilbert Trausch</span>
+                <span class="block pt-[10px] text-[13px] italic font-light">
+                    Plus que les chercheurs de toute autre discipline, les historiens sont obsédés par les livres. Ils représentent leur outil le plus important. 
+                </span>
+                <div class="pt-[350px]">
+                    <img src="./src/images/chapter-2/biblio-4.png" alt="Bibliothèque de Gilbert Trausch">
+                </div>
+            </div>
+
+            <div class="col-span-6 col-start-6">
+                <div class="grid grid-cols-6 gap-[40px]">
+                    <div class="col-span-3 pt-[235px]">
+                        <img src="./src/images/chapter-2/biblio-3.png" alt="Bibliothèque de Gilbert Trausch">
+                    </div>
+                    <div class="col-span-3">
+                        <p>
+                            La passion de G. Trausch pour la collection de livres dépassait les capacités de sa maison; sa bibliothèque de trois étages était divisée en huit pièces, cinq couloirs, deux paliers et un garage. Dans certaines parties de la collection, tout système de classement des livres a dû être abandonné. Les livres n’étaient plus placés en fonction de leur contenu, mais là où il restait de l’espace libre. Si la capacité des étagères pour un placement vertical était épuisée, les livres suivants étaient placés au-dessus ou en travers des livres existants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-[450px]">
+                    <p>
+                        En fonction de la disposition des livres et des possibilités d’accès, une hiérarchie d’usage ou géographie de la bibliothèque se dessine dans la collection de livres deG.Trausch. Les livres sur les étagères de son bureau et au premier étage, ses «livres de proximité», sont plus accessibles, plus facilement identifiables grâce aux conditions d’éclairage et par conséquent plus fréquemment utilisés. Il en va de même pour les étagères des paliers, bien qu’ici les livres soient disposés sur deux rangées, ce qui limite l’accès aux titres du fond. Les photocopies stockées dans des classeurs et des piles sur deux grandes étagères de la dernière pièce du deuxième étage ont évidemment servi tout aussi souvent. Les autres étagères du deuxième étage       de la maison Trausch, réparties dans différentes pièces, couloirs et greniers, sont moins susceptibles d’avoir été utilisées régulièrement. Enfin, le sous-sol       est parfois si mal éclairé que le dos des livres qui y sont rangés n’est pas facilement lisible. C’est là que se trouvaient les «livres de périphérie» ou«livres arrivés en fin de parcours», comme les appelle François, le fils de G. Trausch.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Slider books -->
+        <div class="grid grid-cols-12 gap-[40px] pb-[300px]">
+            <div class="col-span-1 col-start-3 flex flex-col items-center pb-[120px]">
+                <div>
+                    <img src="./src/images/chapter-2/arrow-right.png" alt="">
+                </div>
+                <span class="text-[13px]">drag</span>
+            </div>
+            <div class="col-span-12 col-start-2">
+                <div class="swiper-books">
+                    <div class="swiper-wrapper cursor-pointer">
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/books-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-6.png" alt="">
+                        </div>                    
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/books-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-6.png" alt="">
+                        </div>                    
+                        <div class="swiper-slide">
+                            <img src="./src/images/chapter-2/biblio-7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Bibliothèque Image -->
+        <div class="grid grid-cols-12">
+            <div class="col-span-10 col-start-2">
+                <img src="./src/images/chapter-2/biblio.jpeg" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="grid grid-cols-12 gap-[40px]">
+            <div class="col-span-5">
+                <img src="./src/images/chapter-2/office.png" alt="">
+            </div>
+            <div class="col-span-6 col-start-6">
+                <p>
+                    Les deux principaux espaces où G.Trausch produisait du savoir étaient son bureau représentatif rempli de livres       , situé au premier étage de sa maison, et la pièce la plus reculée du deuxième étage, avec de nombreuses photocopies, qui correspond à un deuxième bureau        aménagé par la suite. Bien que cette configuration soit certainement due à un manque de place, le dédoublement des bureaux       a engendré une scission fonctionnelle: alors que l’aspect de la bibliothèque du premier étage était fortement marqué par sa fonction représentative, la salle de travail du deuxième étage l’était beaucoup plus par sa fonction de travail. 
+                </p>
+                <p>
+                    La pièce du premier étage, située à côté du salon familial et reliée à celui-ci par une porte, apparaît comme un espace intermédiaire entre l’espace représentatif et l’espace privé. Des meubles d’époque, des aménagements qui ne correspondaient pas forcément à des besoins pratiques de travail, des bibliothèques blanches ouvragées ainsi que quelques petits tableaux, figurines et souvenirs de pays lointains créaient une atmosphère de bon goût. Au-dessus de la porte d’entrée de la pièce, un crucifix indiquait qu’il s’agissait d’une maison catholique. La quantité impressionnante de publications et de classeurs, l’échelle en bois et la présence de certains appareils indiquaient qu’il s’agissait d'une salle de travail: téléphone, chaîne hi-fi, fax. L’intersection de la fonction de travail et de la fonction de représentation était soulignée par une table de travail qui présentait des traces d’utilisation intensive ainsi que par les fauteuils qui accueillaient les nombreux visiteurs de G.Trausch.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- NOTES -->
+        <div class="notes fixed -bottom-[100%] p-[40px]">
+            <div class="flex justify-between">
+                <span class="uppercase aboreto text-[22px] font-extrabold">Notes de textes</span>
+                <div id="close" class="flex items-center cursor-pointer">
+                    <span class="uppercase me-3 text-[11px] font-semibold">Fermer</span>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="text-note pt-[80px]">
+                <p class="text"></p>
+            </div>
+        </div>
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/animation.js"></script>
+
+</body>
+</html>
