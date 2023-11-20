@@ -48,6 +48,14 @@ body {
     background-color: #363636;
 }
 
+.bg-paper {
+    background-image: url(../images/intro/background-paper.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100%;
+}
+
 
 /* * * * * * * * * BACKGROUND * * * * * * * * */
 .red {
@@ -80,6 +88,17 @@ body {
 .futura {
     font-family: 'futura';
 }
+
+
+
+
+
+
+img {
+    width: 100%;
+}
+
+
 
 
 
