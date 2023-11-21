@@ -1,3 +1,8 @@
+
+
+console.log('test')
+
+
 const numbers = document.querySelectorAll('sup')
 const blockNotes = document.querySelector('.notes')
 let currentId = 0
@@ -34,11 +39,12 @@ const notesFile = fetch('../../files/notes.json')
         }    
     })
 
-
-document.querySelector('.notes #close').addEventListener('click', () => {
-    blockNotes.classList.remove('active')
-    currentId = 0
-})
+if (blockNotes) {
+    document.querySelector('.notes #close').addEventListener('click', () => {
+        blockNotes.classList.remove('active')
+        currentId = 0
+    })
+}
 
 
 

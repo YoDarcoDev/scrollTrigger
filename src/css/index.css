@@ -27,12 +27,20 @@
 body {
     overflow-x: hidden;
     font-family: 'DM sans';
-    font-size: 17px;
+    font-size: 20px;
     line-height: 135%;
-    font-weight: 400;
+    font-weight: 200;
     background-image: url(./images/background-paper.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 /* * * * * * * * * BACKGROUND * * * * * * * * */
@@ -94,9 +102,13 @@ body {
 
 
 
-img {
+/* img {
     width: 100%;
 }
+
+.swiper-books img {
+    width: auto;
+} */
 
 
 
@@ -165,7 +177,9 @@ section {
 
 
 
-
+img {
+    width: 100%;
+}
 
 
 
