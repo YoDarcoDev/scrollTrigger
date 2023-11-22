@@ -30,7 +30,7 @@ body {
     font-size: 20px;
     line-height: 135%;
     font-weight: 200;
-    background-image: url(./images/background-paper.jpg);
+    background-image: url(../images/intro/background-paper.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }

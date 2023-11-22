@@ -55,22 +55,22 @@ if (blockNotes) {
 
 // SWIPER BOOKS
 const swiper = new Swiper('.swiper-books', {
-    slidesPerView: 1,
-    spaceBetween: 80,
+    slidesPerView: 2,
+    spaceBetween: 20,
     drag: true,
     loop: true,
     breakpoints: {
         768: {
-            slidesPerView: 2,
-            spaceBetween: 80,
-        },
-        1024: {
             slidesPerView: 3,
-            spaceBetween: 80,
+            spaceBetween: 50,
         },
-        1280: {
-            slidesPerView: 4,
-            spaceBetween: 80,
-        },
+        // 1024: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 50,
+        // },
+        // 1280: {
+        //     slidesPerView: 5,
+        //     spaceBetween: 80,
+        // },
     },
 });

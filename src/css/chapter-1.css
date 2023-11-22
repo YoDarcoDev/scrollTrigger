@@ -1,10 +1,4 @@
-.bg-paper {
-    background-image: url(../images/intro/background-paper.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: contain;
-    height: 100%;
-}
+
 
 sup {
     display: inline-block;
