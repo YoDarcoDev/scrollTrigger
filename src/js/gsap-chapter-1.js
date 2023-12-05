@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger) 
 const intro = document.getElementById('intro');
 const chapter1 = document.querySelector('.chapter-1')
+const contents = document.querySelectorAll('.content')
 
 // TODO : Check si on est dans le chapitre 1
 // if (chapter1 !== null) {
@@ -36,6 +37,35 @@ const chapter1 = document.querySelector('.chapter-1')
 
 
 
+/* * * * * INTRO * * * * */
+gsap.from('#intro-video', {
+    scale: 0.2,
+    opacity: 0.2,
+    scrollTrigger: {
+        scrub: 1,
+        trigger: '#intro',
+        start: 'top top+=30%',
+        end: 'top top+=10%',
+    }
+})
+
+gsap.from('#intro h2', 1.8, {
+    y: 100,
+    ease: "power4.out",
+    delay: 2,
+    scrollTrigger: {
+        scrub: 1,
+        trigger: '#intro',
+        start: 'top top+=30%',
+        end: 'top top+=10%',
+        markers: true
+    },
+    stagger: {
+        amount: 0.3
+    }
+})
+
+/* * * * * INTRO * * * * */
 
 
 
@@ -69,7 +99,7 @@ gsap.from('#interview-video', {
 
 
 /* * * * * CITATION * * * * */
-gsap.from('#citation', {
+gsap.from('#citation p', {
     y: 300,
     opacity: 0,
     scale: 0.5,
@@ -116,13 +146,13 @@ gsap.from('#comic-strip-img', {
 
 
 /* * * * * SECTION 1 PINNED * * * * */
-ScrollTrigger.create({
-    trigger: "#section-1",
-    start: "top top", 
-    scrub: 1,
-    pin: "#img-background",
-    end: 'bottom -=' + document.querySelector('#section-1').offsetHeight,
-});
+// ScrollTrigger.create({
+//     trigger: "#section-1",
+//     start: "top top", 
+//     scrub: 1,
+//     pin: "#img-background",
+//     end: 'bottom -=' + document.querySelector('#section-1').offsetHeight,
+// });
 /* * * * * SECTION 1 PINNED * * * * */
 
 
@@ -146,7 +176,6 @@ gsap.from('#books-klepelkrich', {
         scrub: 1,
         start: "top top",
         end: '+=200',
-        markers: true
     }
 })
 
@@ -168,3 +197,25 @@ gsap.from('#img-rtl img', {
     }
 })
 /* * * * * IMAGE FULL TRAUSCH RTL * * * * */
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * SECTION 3 : L'ÂGE D'OR RADIO * * * * */
+ScrollTrigger.create({
+    trigger: "#section-3",
+    start: "top top",
+    end: () => '+=2500',
+    pin: "#section-3-title",
+    pinSpacing: false,
+})
+
+// (lines[lines.length-1].getBoundingClientRect().top - lines[0].getBoundingClientRect().top), 
+console.log(contents[contents.length-1].getBoundingClientRect().top)
