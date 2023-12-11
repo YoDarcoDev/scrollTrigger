@@ -58,7 +58,6 @@ gsap.from('#intro h2', 1.8, {
         trigger: '#intro',
         start: 'top top+=30%',
         end: 'top top+=10%',
-        markers: true
     },
     stagger: {
         amount: 0.3
@@ -106,9 +105,8 @@ gsap.from('#citation p', {
     scrollTrigger: {
         trigger: "#citation",
         start: "top 90%",
-        end: "top 60%",
+        end: "top 40%",
         scrub: 1,
-        // markers: true
     }
 })
 /* * * * * CITATION * * * * */
@@ -187,7 +185,7 @@ gsap.from('#books-klepelkrich', {
 
 /* * * * * IMAGE FULL TRAUSCH RTL * * * * */
 gsap.from('#img-rtl img', {
-    scale: 0.7,
+    scale: 0.5,
     scrollTrigger: {
         trigger: "#img-rtl",
         start: "top center",
@@ -212,10 +210,109 @@ gsap.from('#img-rtl img', {
 ScrollTrigger.create({
     trigger: "#section-3",
     start: "top top",
-    end: () => '+=2500',
+    end: () => '+=2800',
     pin: "#section-3-title",
     pinSpacing: false,
 })
+/* * * * * SECTION 3 : L'ÂGE D'OR RADIO * * * * */
+
+
+
+/* * * * * VIDEO 1 * * * * */
+gsap.from('#video-1', {
+    yPercent: 100,
+    opacity: 0.3,
+    scrollTrigger: {
+        trigger: '#videos',
+        start: 'top center',
+        end: '+=200',
+        scrub: 1
+    }
+})
+/* * * * * VIDEO 1 * * * * */
+
+
+
+/* * * * * VIDEO 2 * * * * */
+gsap.from('#video-2', {
+    yPercent: 100,
+    opacity: 0.3,
+    scrollTrigger: {
+        trigger: '#videos',
+        start: 'top center',
+        end: '+=150',
+        scrub: 1
+    }
+})
+/* * * * * VIDEO 2 * * * * */
+
+
+
+/* * * * * VIDEO 3 * * * * */
+gsap.from('#video-3', {
+    yPercent: 100,
+    opacity: 0.3,
+    scrollTrigger: {
+        trigger: '#videos',
+        start: 'top center',
+        end: '+=150',
+        scrub: 1
+    }
+})
+/* * * * * VIDEO 3 * * * * */
+
+
+
+/* * * * * TEXT AGE D'OR RADIO TV * * * * */
+gsap.from('#block-photo-text p', {
+    yPercent: 100,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#block-photo-text',
+        start: 'top 70%',
+        end: 'top 10%',
+        scrub: 1
+    }
+})
+/* * * * * TEXT AGE D'OR RADIO TV * * * * */
+
+
+
+/* * * * * IMAGE AGE D'OR RADIO TV * * * * */
+gsap.from('#block-photo-text img', {
+    yPercent: 100,
+    xPercent: -100,
+    scale: 0.4,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#block-photo-text',
+        start: 'top 30%',
+        end: 'top top',
+        scrub: 1
+    }
+})
+/* * * * * IMAGE AGE D'OR RADIO TV * * * * */
+
+
+
+
+
+
+/* * * * * IMAGE AGE D'OR RADIO TV * * * * */
+gsap.from('#block-photo-text-2', {
+    yPercent: 90,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#block-photo-text-2',
+        start: 'top bottom',
+        end: 'top 50%',
+        markers: true,
+        scrub: 1
+    }
+})
+/* * * * * IMAGE AGE D'OR RADIO TV * * * * */
+
+
 
 // (lines[lines.length-1].getBoundingClientRect().top - lines[0].getBoundingClientRect().top), 
 console.log(contents[contents.length-1].getBoundingClientRect().top)
