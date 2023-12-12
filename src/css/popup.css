@@ -1,16 +1,19 @@
 .popup {
     height: 100vh;
     width: 100%;
-    background-color: #3E3E3E;
+    transition: 0.8s;
+    top: -100%;
+}
+
+.popup.active {
+    top: 0;
 }
 
 .popup-body {
     height: calc(100vh - 87px)
 }
 
-.popup-body img {
 
-}
 
 .tag {
     padding: 4px 8px;
@@ -27,4 +30,14 @@
     .tag {
         display: inline-block;
     } 
+}
+
+
+.resource {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.resource:hover {
+    filter: blur(4px);
 }

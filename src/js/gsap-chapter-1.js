@@ -51,6 +51,7 @@ gsap.from('#intro-video', {
 
 gsap.from('#intro h2', 1.8, {
     y: 100,
+    opacity: 0,
     ease: "power4.out",
     delay: 2,
     scrollTrigger: {
@@ -76,7 +77,6 @@ gsap.from('#interview-text', {
         trigger: "#interview",
         start: "top 70%",
         end: "top 40%",
-        // markers: true
     }
 })
 
@@ -86,8 +86,7 @@ gsap.from('#interview-video', {
         scrub: 1,
         trigger: "#interview",
         start: "top 40%",
-        end: "+=100",
-        // markers: true
+        end: "+=300",
     }
 })
 /* * * * * INTERVIEW * * * * */
@@ -123,7 +122,6 @@ gsap.from('#comic-strip-text', {
         trigger: "#comic-strip",
         start: "top 80%",
         end: "top 30%",
-        // markers: true,
     }
 })
 
@@ -177,6 +175,29 @@ gsap.from('#books-klepelkrich', {
     }
 })
 
+
+gsap.from('#chapter1-section2-title', {
+    xPercent: -100,
+    scrollTrigger: {
+        trigger: '#section-2',
+        start: 'top center+=10%',
+        end: 'top 20%',
+        scrub: 1,
+    }
+})
+
+
+gsap.from('#chapter1-section2-text', {
+    xPercent: 100,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#section-2',
+        start: 'top center-=10%',
+        end: 'top 10%',
+        scrub: 1
+    }
+})
+
 /* * * * * SECTION 2 : JOURNAL KLEPELKRICH * * * * */
 
 
@@ -191,7 +212,6 @@ gsap.from('#img-rtl img', {
         start: "top center",
         end: "center 60%",
         scrub: 1,
-        // markers: true
     }
 })
 /* * * * * IMAGE FULL TRAUSCH RTL * * * * */
@@ -204,15 +224,41 @@ gsap.from('#img-rtl img', {
 
 
 
-
+const title = document.getElementById('section-3')
 
 /* * * * * SECTION 3 : L'ÂGE D'OR RADIO * * * * */
 ScrollTrigger.create({
     trigger: "#section-3",
     start: "top top",
-    end: () => '+=2800',
+    end: () => 'top top',
+    endTrigger: "#video-identity video",
     pin: "#section-3-title",
     pinSpacing: false,
+})
+
+
+
+gsap.from('#section-3-title', {
+    x: '-100%',
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#section-3',
+        start: 'top center+=10%',
+        end: 'top 20%',
+        scrub: 1,
+    }
+})
+
+
+gsap.from('#section-3-text', {
+    x: '100%',
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#section-3',
+        start: 'top center-=10%',
+        end: 'top 10%',
+        scrub: 1,
+    }
 })
 /* * * * * SECTION 3 : L'ÂGE D'OR RADIO * * * * */
 
@@ -306,7 +352,6 @@ gsap.from('#block-photo-text-2', {
         trigger: '#block-photo-text-2',
         start: 'top bottom',
         end: 'top 50%',
-        markers: true,
         scrub: 1
     }
 })
@@ -314,5 +359,72 @@ gsap.from('#block-photo-text-2', {
 
 
 
-// (lines[lines.length-1].getBoundingClientRect().top - lines[0].getBoundingClientRect().top), 
-console.log(contents[contents.length-1].getBoundingClientRect().top)
+
+/* * * * * SECTION 4 : CONFERENCES GRAND PUBLIC * * * * */
+ScrollTrigger.create({
+    trigger: "#conferences",
+    start: "top top",
+    end: () => '+=3000',
+    pin: "#section-4-title",
+    pinSpacing: false,
+})
+
+
+
+gsap.from('#text-conference-teaser', {
+    yPercent: 100,
+    scrollTrigger: {
+        trigger: '#block-conference-teaser-text',
+        start: 'top center',
+        end: 'top 30%',
+        scrub: 1,
+    }
+})
+
+
+gsap.from('#section-4-title', {
+    x: '-100%',
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#conferences',
+        start: 'top center+=10%',
+        end: 'top 20%',
+        scrub: 1,
+    }
+})
+
+
+gsap.from('#section-4-text', {
+    xPercent: 100,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#conferences',
+        start: 'top center-=10%',
+        end: 'top 10%',
+        scrub: 1,
+    }
+})
+/* * * * * SECTION 4 : CONFERENCES GRAND PUBLIC * * * * */
+
+
+
+
+
+
+
+/* * * * * NEWSPAPER * * * * */
+gsap.from('#newspaper', {
+    yPercent: 100,
+    scale: 0.3,
+    scrollTrigger: {
+        trigger: '#block-conference-teaser-text',
+        start: 'bottom 80%',
+        scrub: 1,
+    }
+})
+/* * * * * NEWSPAPER * * * * */
+
+
+
+
+

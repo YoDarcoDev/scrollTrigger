@@ -1,0 +1,9 @@
+
+// Catégories => 
+// 1 : Livre,
+// 2 : Video,
+// 3 : Audio,
+// 4 : Image,
+// 5 : Photo,
+// 6 : Cahier magique,
+// 7 : Conférence

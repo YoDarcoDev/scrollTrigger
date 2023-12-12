@@ -1,0 +1,63 @@
+{ "ressources" : {
+    "chapter1" : {
+        "1": { 
+            "title": "Histoire du luxembourg",
+            "category" : [1, 2, 3], 
+            "tags": ["Luxembourg", "Résistance"], 
+            "collection": "Nations d'Europe", 
+            "edition": "Hatier",
+            "format": "Broché",
+            "pages": 255,
+            "dimensions": {"width" : 15, "height": 21},
+            "parution": "01/01/1982",
+            "ean": "984571256228",
+            "file": "BD.jpeg" 
+        },
+        "2": { 
+            "title": "Titre 2",
+            "category" : [3], 
+            "tags": ["Trausch", "Guerre"], 
+            "collection": "test", 
+            "edition": "test",
+            "format": "Test",
+            "pages": 200,
+            "dimensions": {"width" : 10, "height": 25},
+            "parution": "01/08/1999",
+            "ean": "564564165416",
+            "file": "conference.jpeg" 
+        } 
+    },
+    "chapter2" : {
+        "1": { 
+            "title": "Titre 3",
+            "category" : [1, 2, 3], 
+            "tags": ["archives"], 
+            "collection": "Nations d'Europe", 
+            "edition": "Hatier",
+            "format": "Broché",
+            "pages": 255,
+            "dimensions": {"width" : 15, "height": 21},
+            "parution": "01/01/1982",
+            "ean": "984571256228",
+            "file": "biblio-2.png" 
+        },
+        "2": { 
+            "title": "Titre 4",
+            "category": [5], 
+            "tags": ["histoire"], 
+            "collection": "test", 
+            "edition": "test",
+            "format": "Test",
+            "pages": 200,
+            "dimensions": {"width" : 10, "height": 25},
+            "parution": "01/08/1999",
+            "file": "biblio-3.png" 
+        } 
+    }
+}}
+
+
+
+
+
+
